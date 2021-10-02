@@ -1,5 +1,6 @@
 package com.example.kotlinscopefunctions
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -29,6 +30,14 @@ class MainActivity : AppCompatActivity() {
 
         /** ALSO */
         val sq = squaredI()
+
+
+        /** APPLY */
+        val intent = Intent().apply {
+            putExtra("", "")
+            putExtra("", 0)
+            action = ""
+        }
     }
 
     private fun squaredI() = (i * i).also { i++ }
