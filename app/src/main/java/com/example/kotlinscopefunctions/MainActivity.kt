@@ -38,6 +38,14 @@ class MainActivity : AppCompatActivity() {
             putExtra("", 0)
             action = ""
         }
+
+
+        /** RUN */
+        val int = Intent().run {
+            putExtra("", 0)
+            putExtra("", "")
+            action = ""
+        }
     }
 
     private fun squaredI() = (i * i).also { i++ }
