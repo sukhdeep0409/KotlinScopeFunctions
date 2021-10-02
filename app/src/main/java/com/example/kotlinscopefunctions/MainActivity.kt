@@ -46,6 +46,13 @@ class MainActivity : AppCompatActivity() {
             putExtra("", "")
             action = ""
         }
+
+
+        /** WITH */
+
+        with(Intent()) {
+            // code
+        }
     }
 
     private fun squaredI() = (i * i).also { i++ }
