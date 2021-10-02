@@ -27,5 +27,9 @@ class MainActivity : AppCompatActivity() {
         } ?: 3
 
 
+        /** ALSO */
+        val sq = squaredI()
     }
+
+    private fun squaredI() = (i * i).also { i++ }
 }
